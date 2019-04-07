@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="8.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MortgageCalculatorController">
+  <columnConstraints>
+    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextField fx:id="purchasePTextField" GridPane.columnIndex="1" />
+      <TextField fx:id="interestRTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button fx:id="calculateButton" defaultButton="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#calculateButtonPressed" text="Calculate" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Slider fx:id="yearSlider" max="30.0" min="1.0" minorTickCount="5" showTickMarks="true" snapToTicks="true" value="15.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="downPTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Purchase Price" />
+      <Label text="Down Payment" GridPane.rowIndex="1" />
+      <Label text="Interest Rate" GridPane.rowIndex="2" />
+      <Label fx:id="yearNum" text="Pick # of years" GridPane.rowIndex="3" />
+      <Label text="Monthly Payment" GridPane.rowIndex="6" />
+      <TextField fx:id="mpTextField" editable="false" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <TextField fx:id="mp10" editable="false" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <TextField fx:id="mp20" editable="false" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <TextField fx:id="mp30" editable="false" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <Label text="10 years" GridPane.rowIndex="7" />
+      <Label text="20 years" GridPane.rowIndex="8" />
+      <Label text="30 years" GridPane.rowIndex="9" />
+      <Label text="Loan Amount" GridPane.rowIndex="5" />
+      <TextField fx:id="loanTextField" editable="false" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+   </children>
+   <padding>
+      <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+   </padding>
+</GridPane>
